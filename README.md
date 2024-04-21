@@ -1,0 +1,1 @@
+Working on random shaders with the help of AI. I don't know how to code but shaders really intrigue me as a 3D artist so I'm trying to learn with the help of AI, most of the code you'll see here was AI generated so forgive any mistakes or unneeded code.
