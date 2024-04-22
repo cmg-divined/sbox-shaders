@@ -1,0 +1,288 @@
+{
+  "Model": "models/citizen_clothes/shirt/jumpsuit/models/jumpsuit.vmdl",
+  "Description": "",
+  "BlendMode": "Translucent",
+  "nodes": [
+    {
+      "_class": "Time",
+      "Identifier": "0",
+      "Position": "-288,208"
+    },
+    {
+      "_class": "Multiply",
+      "DefaultA": 0,
+      "DefaultB": 0.5,
+      "Identifier": "1",
+      "Position": "0,272",
+      "A": {
+        "Identifier": "0",
+        "Output": "Result"
+      }
+    },
+    {
+      "_class": "TileAndOffset",
+      "DefaultTile": "1,3",
+      "DefaultOffset": "0,0",
+      "WrapTo01": false,
+      "Identifier": "2",
+      "Position": "160,256",
+      "Coords": {
+        "Identifier": "4",
+        "Output": "Result"
+      },
+      "Offset": {
+        "Identifier": "1",
+        "Output": "Result"
+      }
+    },
+    {
+      "_class": "ScreenPosition",
+      "Identifier": "3",
+      "Position": "-48,0"
+    },
+    {
+      "_class": "ScreenCoordinate",
+      "Identifier": "4",
+      "Position": "-64,176"
+    },
+    {
+      "_class": "TextureSampler",
+      "Image": "materials/postprocess/lines2.png",
+      "Sampler": {},
+      "UI": {
+        "Name": "",
+        "Default": "1,1,1,1",
+        "SrgbRead": true,
+        "CreateInput": "CreateInputTexture2D"
+      },
+      "Identifier": "5",
+      "Position": "432,176",
+      "Coords": {
+        "Identifier": "2",
+        "Output": "Result"
+      }
+    },
+    {
+      "_class": "Result",
+      "DefaultOpacity": 1,
+      "DefaultRoughness": 0,
+      "DefaultMetalness": 0,
+      "DefaultAmbientOcclusion": 0,
+      "Identifier": "6",
+      "Position": "832,-96",
+      "Albedo": {
+        "Identifier": "8",
+        "Output": "Result"
+      },
+      "Emission": {
+        "Identifier": "13",
+        "Output": "Result"
+      },
+      "Opacity": {
+        "Identifier": "18",
+        "Output": "Result"
+      }
+    },
+    {
+      "_class": "CommentNode",
+      "Size": "1024,546",
+      "Color": "Green",
+      "Title": "Hologram Effect",
+      "Description": "",
+      "Layer": 2,
+      "Identifier": "7",
+      "Position": "-320,-144"
+    },
+    {
+      "_class": "Float4",
+      "Value": "0.27711,1,0.54217,1",
+      "Name": "",
+      "IsAttribute": false,
+      "UI": {
+        "Type": "Color"
+      },
+      "Identifier": "8",
+      "Position": "512,-48"
+    },
+    {
+      "_class": "Fresnel",
+      "DefaultPower": 1,
+      "Identifier": "9",
+      "Position": "176,-432",
+      "Normal": {
+        "Identifier": "11",
+        "Output": "Result"
+      },
+      "Direction": {
+        "Identifier": "14",
+        "Output": "Result"
+      }
+    },
+    {
+      "_class": "Float4",
+      "Value": "1,0.35,0,1",
+      "Name": "",
+      "IsAttribute": false,
+      "UI": {
+        "Type": "Color"
+      },
+      "Identifier": "10",
+      "Position": "-128,-560"
+    },
+    {
+      "_class": "WorldNormal",
+      "Identifier": "11",
+      "Position": "-64,-320"
+    },
+    {
+      "_class": "CommentNode",
+      "Size": "763,482",
+      "Color": "Green",
+      "Title": "Fresnel Effect (Glow)",
+      "Description": "",
+      "Layer": 1,
+      "Identifier": "12",
+      "Position": "-160,-640"
+    },
+    {
+      "_class": "Multiply",
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "13",
+      "Position": "496,-480",
+      "A": {
+        "Identifier": "10",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "9",
+        "Output": "Result"
+      }
+    },
+    {
+      "_class": "ViewDirection",
+      "Identifier": "14",
+      "Position": "128,-240"
+    },
+    {
+      "_class": "FuzzyNoise",
+      "Identifier": "15",
+      "Position": "496,480",
+      "Coords": {
+        "Identifier": "25",
+        "Output": "Result"
+      }
+    },
+    {
+      "_class": "CommentNode",
+      "Size": "1024,402",
+      "Color": "Green",
+      "Title": "Add noise to Effect",
+      "Description": "",
+      "Layer": 1,
+      "Identifier": "16",
+      "Position": "-320,416"
+    },
+    {
+      "_class": "CommentNode",
+      "Size": "1024,546",
+      "Color": "Green",
+      "Title": "Hologram Effect",
+      "Description": "",
+      "Layer": 2,
+      "Identifier": "17",
+      "Position": "-320,-144"
+    },
+    {
+      "_class": "Multiply",
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "18",
+      "Position": "720,176",
+      "A": {
+        "Identifier": "5",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "15",
+        "Output": "Result"
+      }
+    },
+    {
+      "_class": "Time",
+      "Identifier": "19",
+      "Position": "-288,608"
+    },
+    {
+      "_class": "Time",
+      "Identifier": "20",
+      "Position": "-288,208"
+    },
+    {
+      "_class": "ScreenCoordinate",
+      "Identifier": "21",
+      "Position": "-64,176"
+    },
+    {
+      "_class": "Multiply",
+      "DefaultA": 0,
+      "DefaultB": 0.5,
+      "Identifier": "22",
+      "Position": "0,272",
+      "A": {
+        "Identifier": "20",
+        "Output": "Result"
+      }
+    },
+    {
+      "_class": "TileAndOffset",
+      "DefaultTile": "1,3",
+      "DefaultOffset": "0,0",
+      "WrapTo01": false,
+      "Identifier": "23",
+      "Position": "160,256",
+      "Coords": {
+        "Identifier": "21",
+        "Output": "Result"
+      },
+      "Offset": {
+        "Identifier": "22",
+        "Output": "Result"
+      }
+    },
+    {
+      "_class": "Multiply",
+      "DefaultA": 0,
+      "DefaultB": 0.1,
+      "Identifier": "24",
+      "Position": "0,608",
+      "A": {
+        "Identifier": "19",
+        "Output": "Result"
+      }
+    },
+    {
+      "_class": "TileAndOffset",
+      "DefaultTile": "1,3",
+      "DefaultOffset": "0,0",
+      "WrapTo01": false,
+      "Identifier": "25",
+      "Position": "176,592",
+      "Coords": {
+        "Identifier": "26",
+        "Output": "Result"
+      },
+      "Offset": {
+        "Identifier": "24",
+        "Output": "Result"
+      }
+    },
+    {
+      "_class": "TextureCoord",
+      "UseSecondaryCoord": false,
+      "Tiling": "1,1",
+      "Identifier": "26",
+      "Position": "-208,720"
+    }
+  ]
+}
