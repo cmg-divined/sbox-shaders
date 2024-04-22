@@ -1,0 +1,18 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "materials/postprocess/hologram_invisible.shader"
+
+	//---- Texture Filtering ----
+	F_TEXTURE_FILTERING 4 // Nearest Neighbour
+
+	Texture_ps_0 "materials/postprocess/Untitled-1.tga"
+
+	//---- Fog ----
+	g_bFogEnabled "1"
+
+	//---- Translucent ----
+	g_flAlphaTestReference "0.584"
+	g_flAntiAliasedEdgeStrength "0.000"
+}
