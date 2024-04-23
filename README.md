@@ -3,8 +3,8 @@ Working on random shaders with the help of AI. I don't know how to code but shad
 Feel free to use these shaders for anything you need.
 I'd like to thank:
 
-[[@QuackCola]](https://github.com/QuackCola) - for letting me use his KuwaharaFilter.cs file for applying post process shaders as well as always answering my dumb questions and explaining things.
+@QuackCola(https://github.com/QuackCola) - for letting me use his KuwaharaFilter.cs file for applying post process shaders as well as always answering my dumb questions and explaining things.
 
-[[@wheatleymf]](https://github.com/wheatleymf) - for helping me figure out an issue with the holograph shader and explaining things
+@wheatleymf(https://github.com/wheatleymf) - for helping me figure out an issue with the holograph shader and explaining things
 
-[[@NotGaylien]](https://github.com/NotGaylien) - for assisting and answering some of my questions in s&box discord
+@NotGaylien(https://github.com/NotGaylien) - for assisting and answering some of my questions in s&box discord
